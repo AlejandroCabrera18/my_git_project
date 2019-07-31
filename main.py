@@ -14,12 +14,10 @@ the_jinja_env = jinja2.Environment(
 class HomePage(webapp2.RequestHandler):
     def get(self):
         result_template = the_jinja_env.get_template('templates/mainpage.html')
-        search_data={}
-        self.response.write(result_template.render(search_data))
+        self.response.write(result_template.render())
     def post(self):
         result_template = the_jinja_env.get_template('templates/mainpage.html')
-        search_data={}
-        self.response.write(result_template.render(search_data))
+        self.response.write(result_template.render())
 
 class ResultsPage(webapp2.RequestHandler):
     def post(self):

@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Happy Place Results</title>
+  <style>
+  /* #nearby-div{
+  width: 700px;
+  height: 600px;
+  background-size: 100%;
+  text-align: center;
+  position: relative;
+  } */
+
+  /* h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact;
+    color: black;
+    text-shadow: 1px 1px white;
+  }
+  #line1 {
+     top: 0;
+   }
+  #line2 {
+     bottom: 0;
+   } */
+</style>
+</head>
+
+<body style="background-color:gray">
+  <h1>Nearest Locations</h1>
+   <!--The image needs to be rendered for each new meme
+   so set the div's background-image property inline -->
+   <div id="Nearby_Locations">
+   <iframe
+   width="600"
+   height="450"
+   frameborder="0" style="border:0"
+   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBbnOeH6Iliw4rR0bgMfJx7gZ3PtGkN3Sg&q={{location}}" allowfullscreen>
+  </iframe>
+
+     <!-- <h2 id="line1"> {{line1}}</h2>
+     <h2 id="line2"> {{line2}}</h2> -->
+   </div>
+ </body>
+</html>

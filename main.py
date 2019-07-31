@@ -25,14 +25,14 @@ class ResultsPage(webapp2.RequestHandler):
         age = int(self.request.get("age"))
         mode_of_transportation = self.request.get("mode of travel")
         range = int(self.request.get("distance"))
-        zip_code = int(self.request.get("zip code"))
-        data = Search(age=age,mode_of_transportation=mode_of_transportation,range=range,zip_code=zip_code)
+        location = self.request.get("location")
+        data = Search(age=age,mode_of_transportation=mode_of_transportation,range=range,location=location)
         data.put()
         search_data = {
             "age": age,
             "transportation": mode_of_transportation,
             "range": range,
-            "location": zip_code
+            "location": location
         }
         self.response.write(result_template.render(search_data))
 

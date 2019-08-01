@@ -32,7 +32,8 @@ class ResultsPage(webapp2.RequestHandler):
             "age": age,
             "transportation": mode_of_transportation,
             "range": range,
-            "location": location
+            "location": location,
+            "destination": "Trump Golf Course, West Palm Beach"
         }
         self.response.write(result_template.render(search_data))
 

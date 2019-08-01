@@ -1,0 +1,8 @@
+#Nearby_Locations{
+  position: relative;
+}
+#body{
+  background-image: url(/static/Nice_Background.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}

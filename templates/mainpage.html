@@ -7,34 +7,36 @@
   </head>
   <body>
     <form id="form" method = POST action = "/results">
-      <h1>Welcome to HappyPlace!</h1>
-      <p>Helping <i> everyone </i> find their happy place.</p>
-      <br>
-      <h2 id="slogan">Finding your Happy Place is as easy as 1 - 2 - 3!</h2>
-        <div>
-          <b>Step 1: </b>
-          <br>
-          <p> What would you like to do? </p>
-           <label class="image-radio"><input type="radio" name="activity" value="shops" > <img id = "shops" src=static/shop_icon-removebg-preview.png></label>
-           <label class="image-radio"><input type="radio" name="activity" value="movies"> <img id = "movies" src=static/Film_Reel-removebg-preview.png></label><br>
-           <label class="image-radio"><input type="radio" name="activity" value="parks"><img id = "parks" src=static/Park_Icon-removebg-preview.png></label>
-           <label class="image-radio"><input type="radio" name="activity" value="restaurants"> <img id = "restaurants" src=static/Last_Food.png></label>
-
-        </div>
+      <div id="top">
+        <h1>Welcome to HappyPlace!</h1>
+        <p>Helping <i> everyone </i> find their happy place.</p>
+      </div>
+      <div id="activityChoice">
+        <h2 id="slogan">Finding your Happy Place is as easy as 1 - 2 - 3!</h2>
+        <b>Step 1: </b>
         <br>
-        <div>
+        <p> What would you like to do? </p>
+          <label class="image-radio"><input type="radio" name="activity" value="shops" > <img id = "shops" src=static/shop_icon-removebg-preview.png></label>
+          <label class="image-radio"><input type="radio" name="activity" value="movies"> <img id = "movies" src=static/Film_Reel-removebg-preview.png></label><br>
+          <label class="image-radio"><input type="radio" name="activity" value="parks"><img id = "parks" src=static/Park_Icon.png></label>
+          <label class="image-radio"><input type="radio" name="activity" value="restaurants"> <img id = "restaurants" src=static/Fork_and_Knife-removebg-preview.png></label>
+
+      </div>
+        <div id="zip">
+          <br>
           <b>Step 2: </b>
           <br>
           <p> Enter your zip code</p>
             <input type = "text" name = "zip_code" value = "" checked><br>
         </div>
-        <br>
-        <div>
+        <div id="address">
+          <br>
           <b>Step 3: </b>
           <br>
           <p> Enter your address or one near you</p>
             <input type = "text" name = "address" value = "" checked><br>
         </div>
+          <br>
           <input type = "submit" value = "Submit">
         </div>
         <br>

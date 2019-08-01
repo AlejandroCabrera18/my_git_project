@@ -1,9 +1,13 @@
+#top{
+  font-family: "Verdana", Geneva, sans-serif;
+  background-color: #EA564C
+}
+
 #slogan{
+  font-family: "Verdana", Geneva, sans-serif;
   font-style:italic;
 }
-#form{
-  background-color: white;
-}
+
 #movies{
   background-color: #FF00FF;
   width:10%;
@@ -19,4 +23,17 @@
 #parks{
   background-color: lightblue;
   width:10%;
+}
+
+#activityChoice{
+  background-color: #A9E5BB
+}
+
+
+#zip{
+  background-color: #FCF6B1
+}
+
+#address{
+  background-color: #F7B32B
 }

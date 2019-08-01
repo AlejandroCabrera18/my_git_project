@@ -7,11 +7,13 @@
   </head>
   <body>
     <form id="form" method = POST action = "/results">
-      <h1>Welcome to HappyPlace!</h1>
-      <p>Helping <i> everyone </i> find their happy place.</p>
-      <br>
-      <h2 id="slogan">Finding your Happy Place is as easy as 1 - 2 - 3!</h2>
-        <div>
+      <div id="top">
+        <h1>Welcome to HappyPlace!</h1>
+        <p>Helping <i> everyone </i> find their happy place.</p>
+      </div>
+        <div id= "activityChoice">
+          <br>
+          <h2 id="slogan">Finding your Happy Place is as easy as 1 - 2 - 3!</h2>
           <b>Step 1: </b>
           <br>
           <p> What would you like to do? </p>
@@ -22,14 +24,14 @@
 
         </div>
         <br>
-        <div>
+        <div id = "zip">
           <b>Step 2: </b>
           <br>
           <p> Enter your zip code</p>
             <input type = "text" name = "zip_code" value = "" checked><br>
         </div>
         <br>
-        <div>
+        <div id = "address">
           <b>Step 3: </b>
           <br>
           <p> Enter your address or one near you</p>

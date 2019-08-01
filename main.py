@@ -22,20 +22,13 @@ class HomePage(webapp2.RequestHandler):
 class ResultsPage(webapp2.RequestHandler):
     def post(self):
         result_template = the_jinja_env.get_template('templates/result.html')
-
-        mode_of_transportation = self.request.get("mode of travel")
         zip_code = self.request.get("zip_code")
         address = self.request.get("address")
         activity = self.request.get("activity")
-        data = Search(mode_of_transportation=mode_of_transportation,zip_code=zip_code,address=address,activity=activity)
-        data.put()
+        data = Search(zip_code=zip_code,address=address,activity=activity)
         search_data = {
-
-            "transportation": mode_of_transportation,
-            "range": range,
             "address": address,
             "zip_code":zip_code,
-            "destination": "Trump Golf Course, West Palm Beach",
             "activity": activity
         }
         self.response.write(result_template.render(search_data))

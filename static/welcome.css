@@ -4,3 +4,19 @@
 #form{
   background-color: white;
 }
+#movies{
+  background-color: #FF00FF;
+  width:10%;
+}
+#shops{
+  background-color: orange;
+  width:10%;
+}
+#restaurants{
+  background-color: red;
+  width:10%;
+}
+#parks{
+  background-color: lightblue;
+  width:10%;
+}

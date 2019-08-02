@@ -14,10 +14,28 @@ the_jinja_env = jinja2.Environment(
 class HomePage(webapp2.RequestHandler):
     def get(self):
         result_template = the_jinja_env.get_template('templates/mainpage.html')
-        self.response.write(result_template.render())
+        if "iPhone" in self.request.headers['User-Agent'] or "Android" in self.request.headers['User-Agent']:
+            css_data = {
+                "file": "/static/phone_welcome.css"
+            }
+        else:
+            css_data = {
+                "file": "/static/welcome.css"
+            }
+
+        self.response.write(result_template.render(css_data))
     def post(self):
         result_template = the_jinja_env.get_template('templates/mainpage.html')
-        self.response.write(result_template.render())
+        if "iPhone" in self.request.headers['User-Agent'] or "Android" in self.request.headers['User-Agent']:
+            css_data = {
+                "file": "/static/phone_welcome.css"
+            }
+        else:
+            css_data = {
+                "file": "/static/welcome.css"
+            }
+
+        self.response.write(result_template.render(css_data))
 
 class ResultsPage(webapp2.RequestHandler):
     def post(self):

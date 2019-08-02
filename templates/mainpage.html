@@ -2,34 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>HappyPlace</title>
-    <link rel="stylesheet" href="/static/welcome.css">
+    <title>Happy Place</title>
+    <link rel="stylesheet" href={{file}}>
   </head>
-  <body>
-    <form id="form" method = POST action = "/results">
-      <center><h1>Welcome to HappyPlace!</h1>
-      <p>Helping <i> everyone </i> find their happy place.</p>
-      <br>
-      <h2 id="slogan">Finding your Happy Place is as easy as 1 - 2 - 3!</h2>
-        <div>
-          <b>Step 1: </b>
-          <br>
-          <p> What would you like to do? </p>
-           <label class="image-radio"><input type="radio" name="activity" value="shops" > <img id = "shops" src=static/shop_icon-removebg-preview.png></label>
-           <label class="image-radio"><input type="radio" name="activity" value="movies"> <img id = "movies" src=static/Film_Reel-removebg-preview.png></label><br>
-           <label class="image-radio"><input type="radio" name="activity" value="parks"><img id = "parks" src=static/Tree.png></label>
-           <label class="image-radio"><input type="radio" name="activity" value="restaurants"> <img id = "restaurants" src=static/Last_Food.png></label>
-
-        </div>
+  <body id="form" ><center>
+    <form method = POST action = "/results">
+      <div id="top">
+        <h1>Welcome to Happy Place!</h1>
+        <p>Helping <i> everyone </i> find their happy place.</p>
+      </div>
+      <div id="activityChoice">
+        <h2 id="slogan">Finding your Happy Place is as easy as 1 - 2 - 3!</h2>
+        <b>Step 1: </b>
         <br>
-        <div>
+        <p> What would you like to do? </p>
+          <label class="image-radio"><input type="radio" name="activity" value="shops" > <img id = "shops" src=static/shop_icon-removebg-preview.png></label>
+          <label class="image-radio"><input type="radio" name="activity" value="movies"> <img id = "movies" src=static/Film_Reel-removebg-preview.png></label><br>
+          <label class="image-radio"><input type="radio" name="activity" value="parks"><img id = "parks" src=static/Tree.png></label>
+          <label class="image-radio"><input type="radio" name="activity" value="restaurants"> <img id = "restaurants" src=static/Last_Food.png></label>
+
+      </div>
+        <div id="zip">
+          <br>
           <b>Step 2: </b>
           <br>
           <p> Enter your zip code</p>
             <input type = "text" name = "zip_code" value = "" checked><br>
         </div>
-        <br>
-        <div>
+        <div id="address">
+          <br>
           <b>Step 3: </b>
           <br>
           <p> Enter your address, city, and state</p>
@@ -40,6 +41,7 @@
             <p>State</p>
             <input type = "text" name = "state" value = "" checked><br>
         </div>
+          <br>
           <input type = "submit" value = "Submit">
         </div>
         <br>

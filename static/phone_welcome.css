@@ -20,34 +20,30 @@
   font-style:italic;
   font-size: 150%;
 }
-
 #movies{
   background-color: #8A2BE2;
-  width:20%;
-  height:20%;
+  width:40%;
+  height:40%;
 }
 #shops{
   background-color: orange;
-  width:20%;
-  height:20%;
+  width:40%;
+  height:40%;
 }
 #restaurants{
   background-color: red;
-  width:20%;
-  height:20%;
+  width:40%;
+  height:40%;
 }
 #parks{
   background-color: lightblue;
-  width:20%;
-  height:20%;
+  width:40%;
+  height:40%;
 }
-
 #activityChoice{
   font-family: "Verdana", Geneva, sans-serif;
   font-size: 150%;
 }
-
-
 #zip{
   font-family: "Verdana", Geneva, sans-serif;
   font-size: 150%;
@@ -62,10 +58,9 @@ input[type=text]{
 }
 input[type=submit]{
   font-size:150%;
-  -webkit-appearance: none;
+  -webkit-appearance: white;
 
 }
-
 label.image-radio input[type=radio] {
   display: none;
 }

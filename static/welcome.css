@@ -1,28 +1,29 @@
 #slogan{
   font-style:italic;
+  font-size: 150%;
 }
 #form{
   background-color: white;
 }
 #movies{
   background-color: #8A2BE2;
-  width:10%;
-  height:10%;
+  width:20%;
+  height:20%;
 }
 #shops{
   background-color: orange;
-  width:10%;
-  height:10%;
+  width:20%;
+  height:20%;
 }
 #restaurants{
   background-color: red;
-  width:10%;
-  height:10%;
+  width:20%;
+  height:20%;
 }
 #parks{
   background-color: lightblue;
-  width:10%;
-  height:10%;
+  width:20%;
+  height:20%;
 }
 
 label.image-radio input[type=radio] {
